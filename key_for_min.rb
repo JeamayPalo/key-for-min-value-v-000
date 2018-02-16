@@ -3,9 +3,14 @@
 
 def key_for_min_value(name_hash)
   minimum_value = nil
-  key_of_min_value = nil
+  minimum_value_key = nil
   name_hash.each do |key, value|
-    a <=> b
+    if minimum_value == nil || value < minimum_value
+      minimum_value = value
+      minimum_value_key = key
+    end
   end
-  key
+  minium_value_key
 end
+
+key_for_min_value(ikea)
